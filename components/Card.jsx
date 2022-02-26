@@ -5,9 +5,11 @@ const Card = ({date,src,title,text,url}) => {
     return (
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
             <Image
-                src={src} //ここにインポートした仮画像を入れる
+                src={src}
                 className="object-cover w-full h-64 rounded"
                 alt=""
+                width={400}
+                height={240}
             />
             <div className="py-5">
                 <p className="mb-2 text-xs font-semibold text-gray-600 uppercase">
